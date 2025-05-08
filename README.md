@@ -80,4 +80,4 @@ Este é um aplicativo mobile desenvolvido em Kotlin Multiplatform (KMP) que perm
 - Adicionarei novas moedas, Dólar Canadense, Libras Etc.
 - resolverei bugs na versao IoS, pois nao esta dentro do meu conhecimento.
 
-## Obs.: A aplicacao foi desenvolvida no Desktop, entretanto ao roodar no meu computador portatil (macbookPro Intel), tive problemas com versoes do JVM e gradlew ... nao consegui resolver eses bugs ate o moemnto.
+## Obs.: A aplicacao foi desenvolvida no Desktop, entretanto ao rodar no meu computador portatil (macbookPro Intel), tive problemas com versoes do JVM e gradlew ... nao consegui resolver eses bugs ate o moemnto.
