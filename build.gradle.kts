@@ -8,7 +8,7 @@ plugins {
     // Apply the Kotlin Android plugin
     id("org.jetbrains.kotlin.android").apply(false)
     id("org.jetbrains.kotlin.plugin.serialization") apply false
-    id("org.jetbrains.compose") version "1.4.3" apply false
+    id("org.jetbrains.compose") version "1.5.11" apply false
 }
 
 tasks.register("clean", Delete::class) {
@@ -23,8 +23,8 @@ buildscript {
         maven("https://plugins.gradle.org/m2/")
     }
     dependencies {
-        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.8.20")
-        classpath("com.android.tools.build:gradle:8.0.2")
-        classpath("org.jetbrains.compose:compose-gradle-plugin:1.4.3")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.22")
+        classpath("com.android.tools.build:gradle:8.2.0")
+        classpath("org.jetbrains.compose:compose-gradle-plugin:1.5.11")
     }
 } 
