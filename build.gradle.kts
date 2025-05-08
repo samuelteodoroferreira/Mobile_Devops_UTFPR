@@ -23,7 +23,7 @@ buildscript {
         maven("https://plugins.gradle.org/m2/")
     }
     dependencies {
-        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.22")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.21")
         classpath("com.android.tools.build:gradle:8.2.0")
         classpath("org.jetbrains.compose:compose-gradle-plugin:1.5.11")
     }
