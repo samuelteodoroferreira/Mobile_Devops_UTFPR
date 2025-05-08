@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.currencyconverter.android.androidApp-mergeDebugResources-55:/values-watch-v21/values-watch-v21.xml",
+            "map": [
+                {
+                    "source": "/Users/samuelferreira/.gradle/caches/8.10/transforms/e69d7757a73dce0c5a2b57a2cbf763e4/transformed/appcompat-1.6.1/res/values-watch-v21/values-watch-v21.xml",
+                    "from": {
+                        "startLines": "2,6,10",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,271,499",
+                        "endLines": "5,9,13",
+                        "endColumns": "12,12,12",
+                        "endOffsets": "266,494,724"
+                    }
+                }
+            ]
+        }
+    ]
+}

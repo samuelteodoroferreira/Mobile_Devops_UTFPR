@@ -1,0 +1,17 @@
+name: iosApp
+options:
+  bundleIdPrefix: com.currencyconverter
+  deploymentTarget:
+    iOS: 16.0
+targets:
+  iosApp:
+    type: application
+    platform: iOS
+    sources:
+      - iosApp
+    settings:
+      base:
+        INFOPLIST_FILE: iosApp/Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: com.currencyconverter.iosApp
+    dependencies:
+      - framework: shared 
