@@ -1,17 +1,28 @@
 name: iosApp
 options:
-  bundleIdPrefix: com.currencyconverter
+  bundleIdPrefix: com.example
   deploymentTarget:
-    iOS: 16.0
+    iOS: 14.0
+  xcodeVersion: "14.0"
+  minimumXcodeGenVersion: "2.10.0"
+
 targets:
   iosApp:
     type: application
     platform: iOS
     sources:
-      - iosApp
+      - path: iosApp
     settings:
       base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.iosApp
+        DEVELOPMENT_TEAM: ""
         INFOPLIST_FILE: iosApp/Info.plist
-        PRODUCT_BUNDLE_IDENTIFIER: com.currencyconverter.iosApp
-    dependencies:
-      - framework: shared 
+        TARGETED_DEVICE_FAMILY: 1,2
+        SUPPORTS_MACCATALYST: NO
+    info:
+      path: iosApp/Info.plist
+      properties:
+        UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait]
+        UILaunchStoryboardName: LaunchScreen
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: false 

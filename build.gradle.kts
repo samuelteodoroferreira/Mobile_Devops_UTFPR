@@ -27,4 +27,4 @@ buildscript {
         classpath("com.android.tools.build:gradle:8.2.0")
         classpath("org.jetbrains.compose:compose-gradle-plugin:1.5.11")
     }
-} 
+}

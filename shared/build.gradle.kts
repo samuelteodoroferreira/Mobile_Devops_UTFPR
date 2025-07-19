@@ -7,7 +7,8 @@ plugins {
 }
 
 kotlin {
-    android()
+    jvmToolchain(17)
+    androidTarget()
     iosX64()
     iosArm64()
     iosSimulatorArm64()
@@ -16,11 +17,11 @@ kotlin {
         summary = "Shared Module"
         homepage = "https://github.com/samuelteodoroferreira/Mobile_Devops_UTFPR"
         version = "1.0"
-        ios.deploymentTarget = "16.0"
+        ios.deploymentTarget = "17.0"
         podfile = project.file("../iosApp/Podfile")
         framework {
             baseName = "shared"
-            isStatic = true
+            isStatic = false
         }
     }
 
@@ -28,16 +29,19 @@ kotlin {
         val commonMain by getting {
             dependencies {
                 implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3")
-                implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.0")
+                implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.2")
                 implementation("io.ktor:ktor-client-core:2.3.7")
                 implementation("io.ktor:ktor-client-content-negotiation:2.3.7")
                 implementation("io.ktor:ktor-serialization-kotlinx-json:2.3.7")
+                implementation("io.ktor:ktor-client-logging:2.3.7")
                 implementation("io.insert-koin:koin-core:3.5.0")
+                implementation("io.insert-koin:koin-compose:1.1.0")
                 implementation(compose.runtime)
                 implementation(compose.foundation)
                 implementation(compose.material3)
                 implementation(compose.ui)
                 implementation("org.jetbrains.compose.components:components-resources:1.5.11")
+                implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.4.1")
             }
         }
         val commonTest by getting {
@@ -89,8 +93,10 @@ android {
     }
     buildFeatures {
         compose = true
+        viewBinding = false
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.4"
+        kotlinCompilerExtensionVersion = "1.5.1"
     }
+    buildToolsVersion = "34.0.0"
 }

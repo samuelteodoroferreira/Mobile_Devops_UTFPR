@@ -1,7 +1,7 @@
 {
   "name": "shared",
   "version": "1.0",
-  "homepage": "Link to a Kotlin/Native module homepage",
+  "homepage": "https://github.com/samuelteodoroferreira/Mobile_Devops_UTFPR",
   "source": {
     "http": ""
   },
@@ -11,7 +11,7 @@
   "vendored_frameworks": "build/cocoapods/framework/shared.framework",
   "libraries": "c++",
   "platforms": {
-    "ios": "16.0"
+    "ios": "17.0"
   },
   "pod_target_xcconfig": {
     "KOTLIN_PROJECT_PATH": ":shared",

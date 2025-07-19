@@ -1,0 +1,27 @@
+kotlin version: 1.9.21
+error message: java.lang.ClassCastException: Cannot cast androidx.compose.compiler.plugins.kotlin.ComposePluginRegistrar to org.jetbrains.kotlin.compiler.plugin.CompilerPluginRegistrar
+	at java.base/java.lang.Class.cast(Class.java:3991)
+	at org.jetbrains.kotlin.util.ServiceLoaderLite.loadImplementations(ServiceLoaderLite.kt:52)
+	at org.jetbrains.kotlin.util.ServiceLoaderLite.loadImplementations(ServiceLoaderLite.kt:44)
+	at org.jetbrains.kotlin.cli.jvm.plugins.PluginCliParser.loadPluginsLegacyStyle(PluginCliParser.kt:145)
+	at org.jetbrains.kotlin.cli.jvm.plugins.PluginCliParser.loadPluginsSafe(PluginCliParser.kt:58)
+	at org.jetbrains.kotlin.cli.common.CLICompiler.loadPlugins(CLICompiler.kt:217)
+	at org.jetbrains.kotlin.cli.jvm.K2JVMCompiler.doExecute(K2JVMCompiler.kt:67)
+	at org.jetbrains.kotlin.cli.jvm.K2JVMCompiler.doExecute(K2JVMCompiler.kt:50)
+	at org.jetbrains.kotlin.cli.common.CLICompiler.execImpl(CLICompiler.kt:104)
+	at org.jetbrains.kotlin.cli.common.CLICompiler.execImpl(CLICompiler.kt:48)
+	at org.jetbrains.kotlin.cli.common.CLITool.exec(CLITool.kt:101)
+	at org.jetbrains.kotlin.cli.common.CLITool.exec(CLITool.kt:79)
+	at org.jetbrains.kotlin.cli.common.CLICompiler.execAndOutputXml(CLICompiler.kt:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.jetbrains.kotlin.compilerRunner.GradleKotlinCompilerWork.compileInProcessImpl(GradleKotlinCompilerWork.kt:396)
+	at org.jetbrains.kotlin.compilerRunner.GradleKotlinCompilerWork.access$compileInProcessImpl(GradleKotlinCompilerWork.kt:80)
+	at org.jetbrains.kotlin.compilerRunner.GradleKotlinCompilerWork$compileInProcess$future$1.call(GradleKotlinCompilerWork.kt:369)
+	at org.jetbrains.kotlin.compilerRunner.GradleKotlinCompilerWork$compileInProcess$future$1.call(GradleKotlinCompilerWork.kt:368)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+
+
