@@ -96,7 +96,7 @@ android {
         viewBinding = false
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.1"
+        kotlinCompilerExtensionVersion = "1.5.4"
     }
     buildToolsVersion = "34.0.0"
 }

@@ -4,7 +4,17 @@
             "outputFile": "com.currencyconverter.android.androidApp-mergeDebugResources-50:/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "/Users/samuelferreira/.gradle/caches/8.10/transforms/ed660df8871fcd8e2f8c21adcf8b7296/transformed/appcompat-1.6.1/res/values-v16/values-v16.xml",
+                    "source": "/Users/samuelferreira/.gradle/caches/8.10/transforms/dc963b5745939f7c3e3c7f57cc752157/transformed/core-1.10.0/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                },
+                {
+                    "source": "/Users/samuelferreira/.gradle/caches/8.10/transforms/5659a6aaa1d24834addb64efd015d5ff/transformed/appcompat-1.6.1/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -20,16 +30,6 @@
                         "endLines": "6",
                         "endColumns": "12",
                         "endOffsets": "289"
-                    }
-                },
-                {
-                    "source": "/Users/samuelferreira/.gradle/caches/8.10/transforms/e85a4d19aa596f4c434bed13d402c3cd/transformed/core-1.10.0/res/values-v16/values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
                     }
                 }
             ]

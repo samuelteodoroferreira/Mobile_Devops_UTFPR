@@ -7,7 +7,7 @@ import io.ktor.client.*
 import io.ktor.client.call.*
 import io.ktor.client.engine.*
 import io.ktor.client.plugins.contentnegotiation.*
-import io.ktor.client.plugins.timeout.*
+// import io.ktor.client.plugins.timeout.*
 import io.ktor.client.request.*
 import io.ktor.serialization.kotlinx.json.*
 import kotlinx.serialization.json.Json
@@ -24,10 +24,10 @@ class CurrencyRepository : KoinComponent {
                 isLenient = true
             })
         }
-        install(HttpTimeout) {
-            requestTimeoutMillis = 10.seconds.inWholeMilliseconds
-            connectTimeoutMillis = 5.seconds.inWholeMilliseconds
-        }
+        // install(HttpTimeout) {
+        //     requestTimeoutMillis = 10.seconds.inWholeMilliseconds
+        //     connectTimeoutMillis = 5.seconds.inWholeMilliseconds
+        // }
     }
 
     suspend fun getExchangeRate(from: String, to: String): Double {
